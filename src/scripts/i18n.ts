@@ -25,6 +25,17 @@ function applyLang(lang: Lang) {
     if (typeof value === "string") el.textContent = value;
   });
 
+  document.querySelectorAll<HTMLElement>("[data-i18n-attr]").forEach((el) => {
+    const spec = el.getAttribute("data-i18n-attr");
+    if (!spec) return;
+    spec.split(",").forEach((pair) => {
+      const [attr, path] = pair.split(":").map((s) => s.trim());
+      if (!attr || !path) return;
+      const value = getPath(dict, path);
+      if (typeof value === "string") el.setAttribute(attr, value);
+    });
+  });
+
   document.querySelectorAll<HTMLButtonElement>("[data-lang-switch]").forEach((btn) => {
     const isActive = btn.getAttribute("data-lang-switch") === lang;
     btn.setAttribute("aria-pressed", String(isActive));

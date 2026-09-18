@@ -40,6 +40,7 @@ export interface SiteContent {
     summary: string;
     ctaContact: string;
     ctaResume: string;
+    resumeHref: string;
   };
   experience: {
     heading: string;
@@ -95,7 +96,8 @@ export const content: Record<Lang, SiteContent> = {
       summary:
         "6+ years of experience building scalable products across fintech, logistics, and e-commerce fulfillment. I like proposing and leading projects end-to-end, from technical design through delivery, and communicating clearly with stakeholders across engineering and the business.",
       ctaContact: "Get in touch",
-      ctaResume: "Download résumé",
+      ctaResume: "Download resume",
+      resumeHref: "/resume.pdf",
     },
     experience: {
       heading: "Work Experience",
@@ -310,9 +312,10 @@ export const content: Record<Lang, SiteContent> = {
       name: "Eduin Shaik",
       title: "Ingeniero Full-Stack",
       summary:
-        "6+ años de experiencia construyendo productos escalables en fintech, logística y e-commerce. Me gusta proponer y liderar proyectos de punta a punta, desde el diseño técnico hasta la entrega, comunicándome claramente con stakeholders de ingeniería y negocio.",
+        "6+ años de experiencia construyendo productos escalables en fintech, logística y fulfillment de e-commerce. Me gusta proponer y liderar proyectos end-to-end, desde el diseño técnico hasta la entrega, comunicándome con claridad con stakeholders de ingeniería y de negocio.",
       ctaContact: "Contáctame",
       ctaResume: "Descargar CV",
+      resumeHref: "/resume-es.pdf",
     },
     experience: {
       heading: "Experiencia Laboral",
@@ -324,11 +327,11 @@ export const content: Record<Lang, SiteContent> = {
           period: "May 2025 – Presente",
           location: "Remoto",
           bullets: [
-            "Lideré la automatización de un proceso manual de solicitud de reportes de crédito que consumía ~120 horas/mes, reemplazando descargas manuales por un pipeline SFTP programado — llevando el proceso de 100% manual a 0%.",
-            "Diseñé un sistema de portales co-brandeados (autenticación dual, ruteo por subdominio, theming dinámico) señalado internamente como la iniciativa de ingresos más prometedora.",
-            "Construí un servidor de autenticación unificado (NestJS + node-oidc-provider) que da soporte al login web y móvil (React Native), con más de 10,000 logins diarios.",
-            "Diseñé un módulo de estructura legal-empresarial con jerarquías recursivas de propiedad y recordatorios automáticos de cumplimiento.",
-            "Construí un sistema de atribución de referidos que soporta más de 50 partners simultáneamente, habilitando planes y reportes históricos por partner.",
+            "Lideré la automatización end-to-end de un proceso manual de solicitud de reportes de crédito con un tercero, que consumía ~120 horas/mes del equipo de Underwriting — reemplazando descargas manuales por un pipeline SFTP programado, llevando el proceso de 100% manual a 0%.",
+            "Diseñé la arquitectura de un portal co-branded (dual auth, subdomain routing, theming dinámico) identificado internamente como el proyecto con mayor potencial de ingresos para el go-to-market.",
+            "Construí un servidor de autenticación unificado (NestJS + node-oidc-provider) que soporta el login de la app web y la móvil (React Native), manejando más de 10,000 logins diarios.",
+            "Diseñé un módulo de estructura legal con jerarquías recursivas de propiedad empresarial y recordatorios automáticos de compliance.",
+            "Construí un sistema de atribución de referidos por partner con soporte para más de 50 partners simultáneamente, habilitando planes y reportes históricos por partner.",
           ],
         },
         {
@@ -348,14 +351,14 @@ export const content: Record<Lang, SiteContent> = {
           period: "Mar 2022 – Sep 2023",
           location: "Remoto",
           bullets: [
-            "Construí una herramienta interna de control de horas adoptada por toda la empresa para facturación precisa a clientes.",
-            "Lideré un proyecto de automatización de flujos en el sector salud (plataforma no-code Decisions) para un cliente en EE. UU. durante 5 meses, a cargo del diseño técnico, la implementación y la comunicación directa con el cliente.",
+            "Construí una herramienta interna de time-tracking adoptada por toda la empresa para facturación precisa a clientes.",
+            "Lideré un proyecto de automatización de workflows en el sector salud (plataforma no-code Decisions) para un cliente en EE. UU. durante 5 meses, a cargo del diseño técnico, la implementación y la comunicación directa con el cliente.",
             "Desarrollé funcionalidades de control de stock y reportería para clientes de inventario en retail/hardware.",
           ],
         },
         {
           role: "Freelance – Desarrollador Full-Stack",
-          company: "Plataforma de Gestión de Camiones",
+          company: "Plataforma de Gestión de Fletes (Truckload)",
           period: "Oct 2020 – Dic 2021",
           location: "Remoto",
           bullets: [
@@ -376,11 +379,11 @@ export const content: Record<Lang, SiteContent> = {
           impact: "100% → 0% esfuerzo manual",
         },
         {
-          title: "Portal Co-Brandeado para Partners",
+          title: "Portal Co-Branded para Partners",
           tags: ["Next.js", "Multi-tenant", "Auth"],
           description:
-            "Base reutilizable para experiencias con marca de partners: autenticación dual, ruteo por subdominio, manejo de sesión/cookies y theming dinámico.",
-          impact: "Principal iniciativa de ingresos",
+            "Base reutilizable para experiencias de marca compartida con partners: dual auth, subdomain routing, manejo de cookies/sesiones y theming dinámico.",
+          impact: "Principal iniciativa de go-to-market",
         },
         {
           title: "Servidor de Autenticación Unificado",
@@ -492,7 +495,7 @@ export const content: Record<Lang, SiteContent> = {
       kicker: "Quién soy",
       paragraphs: [
         "Soy Ingeniero Full-Stack radicado en Barranquilla, Colombia, con más de 6 años de experiencia construyendo productos en fintech, logística y e-commerce.",
-        "Me importa construir y mejorar sistemas que la gente realmente usa — disfruto liderar proyectos de punta a punta, desde el diseño técnico hasta la entrega, y mantenerme cerca del impacto de negocio de lo que construyo.",
+        "Me importa construir y mejorar sistemas que la gente realmente usa — disfruto liderar proyectos end-to-end, desde el diseño técnico hasta la entrega, y mantenerme cerca del impacto de negocio de lo que construyo.",
         "Últimamente estoy metido de lleno en desarrollo asistido por IA: uso herramientas como Claude Code, MCP y Cursor para moverme más rápido sin sacrificar calidad, y escribo skills/automatizaciones que ayudan a los equipos a trabajar mejor.",
       ],
       education: "Ingeniero de Sistemas · Universidad del Norte, Barranquilla (2017 – 2021)",

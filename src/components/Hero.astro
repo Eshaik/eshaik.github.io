@@ -5,10 +5,10 @@ const hero = content.en.hero;
 ---
 
 <section id="top" class="mx-auto max-w-5xl px-6 pb-20 pt-16 sm:pt-24">
-  <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-mono text-emerald-300">
+  <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-amber-400/20 bg-amber-400/10 px-3 py-1 text-xs font-mono text-amber-300">
     <span class="relative flex h-2 w-2">
-      <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-      <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+      <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-400 opacity-75"></span>
+      <span class="relative inline-flex h-2 w-2 rounded-full bg-amber-400"></span>
     </span>
     <span data-i18n="hero.badge">{hero.badge}</span>
   </div>
@@ -19,7 +19,7 @@ const hero = content.en.hero;
   <h1 class="mt-2 text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
     <span data-i18n="hero.name">{hero.name}</span>
   </h1>
-  <p class="mt-3 text-xl font-medium text-emerald-400 sm:text-2xl" data-i18n="hero.title">
+  <p class="mt-3 text-xl font-medium text-amber-400 sm:text-2xl" data-i18n="hero.title">
     {hero.title}
   </p>
 
@@ -31,13 +31,14 @@ const hero = content.en.hero;
     <a
       href={`mailto:${socials.email}`}
       data-i18n="hero.ctaContact"
-      class="rounded-lg bg-emerald-400 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300"
+      class="rounded-lg bg-amber-400 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-amber-300"
     >
       {hero.ctaContact}
     </a>
     <a
-      href="/resume.pdf"
+      href={hero.resumeHref}
       data-i18n="hero.ctaResume"
+      data-i18n-attr="href:hero.resumeHref"
       class="rounded-lg border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10"
     >
       {hero.ctaResume}
