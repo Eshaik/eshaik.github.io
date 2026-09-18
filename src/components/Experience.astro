@@ -1,0 +1,33 @@
+---
+import { content } from "../data/content";
+
+const exp = content.en.experience;
+---
+
+<section id="experience" class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <p class="font-mono text-sm text-emerald-400" data-i18n="experience.kicker">{exp.kicker}</p>
+  <h2 class="mt-2 text-3xl font-bold text-white sm:text-4xl" data-i18n="experience.heading">{exp.heading}</h2>
+
+  <ol class="mt-10 space-y-10 border-l border-white/10 pl-6 sm:pl-8">
+    {exp.items.map((item, i) => (
+      <li class="relative">
+        <span class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full border-2 border-[#030712] bg-emerald-400 sm:-left-[39px]"></span>
+
+        <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+          <h3 class="text-lg font-semibold text-white" data-i18n={`experience.items.${i}.role`}>{item.role}</h3>
+          <span class="font-mono text-xs text-slate-500" data-i18n={`experience.items.${i}.period`}>{item.period}</span>
+        </div>
+        <p class="text-sm font-medium text-emerald-400/90" data-i18n={`experience.items.${i}.company`}>{item.company}</p>
+
+        <ul class="mt-3 space-y-2">
+          {item.bullets.map((bullet, j) => (
+            <li class="flex gap-2 text-sm leading-relaxed text-slate-400">
+              <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-slate-600"></span>
+              <span data-i18n={`experience.items.${i}.bullets.${j}`}>{bullet}</span>
+            </li>
+          ))}
+        </ul>
+      </li>
+    ))}
+  </ol>
+</section>

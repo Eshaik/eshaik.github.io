@@ -1,0 +1,68 @@
+---
+import { content } from "../data/content";
+
+const nav = content.en.nav;
+---
+
+<header class="sticky top-0 z-50 border-b border-white/5 bg-[#030712]/80 backdrop-blur">
+  <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-4">
+    <a href="#top" class="shrink-0 font-mono text-sm font-semibold text-white">
+      eduin<span class="text-emerald-400">.</span>dev
+    </a>
+
+    <nav class="hidden flex-1 items-center justify-center gap-6 overflow-x-auto text-sm text-slate-400 sm:flex">
+      <a href="#experience" data-i18n="nav.experience" class="whitespace-nowrap transition hover:text-white">
+        {nav.experience}
+      </a>
+      <a href="#projects" data-i18n="nav.projects" class="whitespace-nowrap transition hover:text-white">
+        {nav.projects}
+      </a>
+      <a href="#skills" data-i18n="nav.skills" class="whitespace-nowrap transition hover:text-white">
+        {nav.skills}
+      </a>
+      <a href="#about" data-i18n="nav.about" class="whitespace-nowrap transition hover:text-white">
+        {nav.about}
+      </a>
+      <a href="#contact" data-i18n="nav.contact" class="whitespace-nowrap transition hover:text-white">
+        {nav.contact}
+      </a>
+    </nav>
+
+    <div class="flex shrink-0 items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1 text-xs font-mono">
+      <button
+        type="button"
+        data-lang-switch="en"
+        aria-pressed="true"
+        class="rounded-full px-2.5 py-1 text-slate-400 transition aria-pressed:bg-emerald-400 aria-pressed:text-slate-950 aria-pressed:font-semibold hover:text-white"
+      >
+        EN
+      </button>
+      <button
+        type="button"
+        data-lang-switch="es"
+        aria-pressed="false"
+        class="rounded-full px-2.5 py-1 text-slate-400 transition aria-pressed:bg-emerald-400 aria-pressed:text-slate-950 aria-pressed:font-semibold hover:text-white"
+      >
+        ES
+      </button>
+    </div>
+  </div>
+
+  <nav class="flex items-center gap-4 overflow-x-auto border-t border-white/5 px-6 py-2 text-sm text-slate-400 sm:hidden">
+    <a href="#experience" data-i18n="nav.experience" class="whitespace-nowrap transition hover:text-white">
+      {nav.experience}
+    </a>
+    <a href="#projects" data-i18n="nav.projects" class="whitespace-nowrap transition hover:text-white">
+      {nav.projects}
+    </a>
+    <a href="#skills" data-i18n="nav.skills" class="whitespace-nowrap transition hover:text-white">
+      {nav.skills}
+    </a>
+    <a href="#about" data-i18n="nav.about" class="whitespace-nowrap transition hover:text-white">
+      {nav.about}
+    </a>
+    <a href="#contact" data-i18n="nav.contact" class="whitespace-nowrap transition hover:text-white">
+      {nav.contact}
+    </a>
+  </nav>
+</header>
