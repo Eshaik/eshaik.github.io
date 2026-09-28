@@ -77,7 +77,7 @@ export interface SiteContent {
 export const content: Record<Lang, SiteContent> = {
   en: {
     meta: {
-      title: "Eduin Shaik — Full-Stack Engineer",
+      title: "Eduin Shaik · Full-Stack Engineer",
       description:
         "Full-Stack Engineer with 6+ years building scalable products across fintech, logistics, and e-commerce fulfillment.",
     },
@@ -109,7 +109,7 @@ export const content: Record<Lang, SiteContent> = {
           period: "May 2025 – Present",
           location: "Remote",
           bullets: [
-            "Led end-to-end automation of a manual third-party credit-report process that consumed ~120 hours/month, replacing manual downloads with a scheduled SFTP pipeline — taking the process from 100% manual to 0%.",
+            "Led end-to-end automation of a manual third-party credit-report process that consumed ~120 hours/month, replacing manual downloads with a scheduled SFTP pipeline and taking the process from 100% manual to 0%.",
             "Architected a co-branded portal system (dual auth, subdomain routing, dynamic theming) flagged internally as the most promising go-to-market revenue initiative.",
             "Built a unified authentication server (NestJS + node-oidc-provider) powering login for web and mobile (React Native), supporting 10,000+ logins per day.",
             "Designed a legal-entity structure module supporting recursive business-ownership hierarchies and automated compliance reminders.",
@@ -123,7 +123,7 @@ export const content: Record<Lang, SiteContent> = {
           location: "Remote",
           bullets: [
             "Led the redesign of the warehouse system's data model into a flexible hierarchical structure with an inventory service to track stock across every level.",
-            "Took the operations team from processing products one by one to seconds — improving receiving speed by roughly 70–150%.",
+            "Took the operations team from processing products one by one to seconds, improving receiving speed by roughly 70–150%.",
             "Integrated the OpenAI (ChatGPT) API into the warehouse app to automatically verify user-entered codes during receiving.",
           ],
         },
@@ -276,8 +276,7 @@ export const content: Record<Lang, SiteContent> = {
       heading: "About Me",
       kicker: "Who I am",
       paragraphs: [
-        "I'm a Full-Stack Engineer based in Barranquilla, Colombia, with 6+ years of experience building products across fintech, logistics, and e-commerce fulfillment.",
-        "I care about building and improving systems that people actually use — I enjoy owning projects end-to-end, from technical design through delivery, and staying close to the business impact of what I ship.",
+        "Based in Barranquilla, Colombia. I care about building and improving systems that people actually use, and I'm always looking for ways to do things better, staying open to feedback along the way.",
         "Lately I've been deep into AI-assisted development: using tools like Claude Code, MCP, and Cursor to move faster without cutting corners, and authoring skills/automations that help teams work smarter.",
       ],
       education: "Systems Engineer · Universidad del Norte, Barranquilla (2017 – 2021)",
@@ -286,7 +285,7 @@ export const content: Record<Lang, SiteContent> = {
       heading: "Let's talk",
       kicker: "Contact",
       text:
-        "I'm open to new opportunities and interesting projects. The fastest way to reach me is email — I also hang out on LinkedIn and GitHub.",
+        "I'm open to new opportunities and interesting projects. The fastest way to reach me is email, though you can also find me on LinkedIn and GitHub.",
       emailLabel: "Send an email",
     },
     footer: {
@@ -295,7 +294,7 @@ export const content: Record<Lang, SiteContent> = {
   },
   es: {
     meta: {
-      title: "Eduin Shaik — Ingeniero Full-Stack",
+      title: "Eduin Shaik · Ingeniero Full-Stack",
       description:
         "Ingeniero Full-Stack con más de 6 años construyendo productos escalables en fintech, logística y e-commerce.",
     },
@@ -327,7 +326,7 @@ export const content: Record<Lang, SiteContent> = {
           period: "May 2025 – Presente",
           location: "Remoto",
           bullets: [
-            "Lideré la automatización end-to-end de un proceso manual de solicitud de reportes de crédito con un tercero, que consumía ~120 horas/mes del equipo de Underwriting — reemplazando descargas manuales por un pipeline SFTP programado, llevando el proceso de 100% manual a 0%.",
+            "Lideré la automatización end-to-end de un proceso manual de solicitud de reportes de crédito con un tercero, que consumía ~120 horas/mes del equipo de Underwriting, reemplazando descargas manuales por un pipeline SFTP programado y llevando el proceso de 100% manual a 0%.",
             "Diseñé la arquitectura de un portal co-branded (dual auth, subdomain routing, theming dinámico) identificado internamente como el proyecto con mayor potencial de ingresos para el go-to-market.",
             "Construí un servidor de autenticación unificado (NestJS + node-oidc-provider) que soporta el login de la app web y la móvil (React Native), manejando más de 10,000 logins diarios.",
             "Diseñé un módulo de estructura legal con jerarquías recursivas de propiedad empresarial y recordatorios automáticos de compliance.",
@@ -341,7 +340,7 @@ export const content: Record<Lang, SiteContent> = {
           location: "Remoto",
           bullets: [
             "Lideré el rediseño del modelo de datos del sistema de bodega hacia una estructura jerárquica flexible, con un servicio de inventario que rastrea stock en cada nivel.",
-            "Llevé al equipo de operaciones de procesar productos uno por uno a hacerlo en segundos — mejorando la velocidad de recepción entre un 70–150%.",
+            "Llevé al equipo de operaciones de procesar productos uno por uno a hacerlo en segundos, mejorando la velocidad de recepción entre un 70–150%.",
             "Integré la API de OpenAI (ChatGPT) en la app de bodega para verificar automáticamente códigos ingresados por el usuario durante la recepción.",
           ],
         },
@@ -494,8 +493,7 @@ export const content: Record<Lang, SiteContent> = {
       heading: "Sobre Mí",
       kicker: "Quién soy",
       paragraphs: [
-        "Soy Ingeniero Full-Stack radicado en Barranquilla, Colombia, con más de 6 años de experiencia construyendo productos en fintech, logística y e-commerce.",
-        "Me importa construir y mejorar sistemas que la gente realmente usa — disfruto liderar proyectos end-to-end, desde el diseño técnico hasta la entrega, y mantenerme cerca del impacto de negocio de lo que construyo.",
+        "Radicado en Barranquilla, Colombia. Me importa construir y mejorar sistemas que la gente realmente usa, y siempre estoy buscando formas de hacer las cosas mejor, manteniéndome abierto al feedback.",
         "Últimamente estoy metido de lleno en desarrollo asistido por IA: uso herramientas como Claude Code, MCP y Cursor para moverme más rápido sin sacrificar calidad, y escribo skills/automatizaciones que ayudan a los equipos a trabajar mejor.",
       ],
       education: "Ingeniero de Sistemas · Universidad del Norte, Barranquilla (2017 – 2021)",
@@ -504,7 +502,7 @@ export const content: Record<Lang, SiteContent> = {
       heading: "Hablemos",
       kicker: "Contacto",
       text:
-        "Estoy abierto a nuevas oportunidades y proyectos interesantes. La forma más rápida de contactarme es por correo — también estoy en LinkedIn y GitHub.",
+        "Estoy abierto a nuevas oportunidades y proyectos interesantes. La forma más rápida de contactarme es por correo, aunque también estoy en LinkedIn y GitHub.",
       emailLabel: "Enviar un correo",
     },
     footer: {

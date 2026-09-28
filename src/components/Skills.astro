@@ -1,5 +1,6 @@
 ---
 import { content } from "../data/content";
+import { getSkillIconPath } from "../data/skillIcons";
 
 const skills = content.en.skills;
 ---
@@ -15,11 +16,19 @@ const skills = content.en.skills;
           {group.name}
         </h3>
         <div class="mt-4 flex flex-wrap gap-2">
-          {group.items.map((item) => (
-            <span class="rounded-md border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-xs text-slate-400">
-              {item}
-            </span>
-          ))}
+          {group.items.map((item) => {
+            const iconPath = getSkillIconPath(item);
+            return (
+              <span class="flex items-center gap-1.5 rounded-md border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-xs text-slate-400">
+                {iconPath && (
+                  <svg viewBox="0 0 24 24" class="h-3 w-3 shrink-0 text-slate-500" fill="currentColor" aria-hidden="true">
+                    <path d={iconPath} />
+                  </svg>
+                )}
+                {item}
+              </span>
+            );
+          })}
         </div>
       </div>
     ))}

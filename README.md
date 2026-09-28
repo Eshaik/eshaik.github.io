@@ -1,8 +1,8 @@
 # eshaik.github.io
 
-Personal portfolio for Eduin Shaik — Full-Stack Engineer. Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com), deployed to GitHub Pages.
+Personal portfolio for Eduin Shaik, Full-Stack Engineer. Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com), deployed to GitHub Pages.
 
-Bilingual (English / Español) via a client-side language switch — no page reload, no routing, preference saved in `localStorage`.
+Bilingual (English / Español) via a client-side language switch: no page reload, no routing, preference saved in `localStorage`.
 
 ## Development
 
